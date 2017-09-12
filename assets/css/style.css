@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Merriweather', serif;
+	font-family: serif;
 }
 body{
 	background-color: white;
@@ -49,12 +49,14 @@ nav{
 	bottom: 24px;
 }
 /*SERVICIOS*/
+
 .contenedor{
-	height: 100%;
+	height: 400px;
 	text-align: center;
+	display: block;
 }
 /* BOTONES*/
-.next-button,.prev-button{
+/*.next-button,.prev-button{
 	background-color: #78797c;
 	border-radius: 50%;
 	width: 55px;
@@ -117,6 +119,9 @@ nav{
 	margin-top: 20px;
 }
 /* TERAPIAS */
+#terapia{
+	height: 100%;
+}
 .image-terapia{
 	width: 40%;
 }
@@ -131,6 +136,7 @@ nav{
 /*ARANCELES */
 #aranceles{
 	background-color: #ecedec;
+	height: 100%;
 }
 .image-aranceles{
 	width: 60%;
@@ -194,9 +200,12 @@ footer{
 	text-align: center;
 	color: white;
 	padding-top: 50px;
+	display: block;
 }
 
 /*RESPONSIVE ------ RESPONSIVE   */
 @media only screen and (max-width: 600px){
-
-}_
+	.contenedor{
+		height: 100%;
+	}
+}
