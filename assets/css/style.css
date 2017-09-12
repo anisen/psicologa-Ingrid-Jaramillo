@@ -1,0 +1,202 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Merriweather', serif;
+}
+body{
+	background-color: white;
+}
+.row .col{
+	padding: 0;
+}
+/*presentacion*/
+nav{
+	height: 150px;
+	background-color: white;
+	text-align: center;
+}
+.h1-menu{
+	color: black;
+	margin-bottom: 5px;
+}
+.a-menu{
+	text-decoration: none;
+	color: black;
+}
+.li-menu{
+	float: left;
+	display: block;
+	text-align: center;
+}
+.li-menu:hover{
+	background-color: #ff9100;
+	height: 80%;
+	color: white;
+}
+.a-menu:hover{
+	color: white;
+	text-decoration: none;
+}
+.ul-menu{
+	position: relative;
+	bottom: 38px;
+}
+.p-menu{
+	color: black;
+	padding:0;
+	margin:0;
+	position: relative;
+	bottom: 24px;
+}
+/*SERVICIOS*/
+.contenedor{
+	height: 100%;
+	text-align: center;
+}
+/* BOTONES*/
+.next-button,.prev-button{
+	background-color: #78797c;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	border-style: none;
+	text-align: center;
+	margin-top: 10%;
+}
+.botones{
+	font-size: 25px;
+}
+.fa{
+	color: #ff9100;
+	z-index: 2;
+	font-size: 30px;
+
+}
+/*SLIDER*/
+#slice{
+	width: 100%;
+	position: relative;
+	height: 100%;
+}
+.slider{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+/*  HOMEEEE */
+#home{
+	background-color: #ecedec;
+}
+.image-home{
+	width: 50%;
+	padding: 5px;
+	border: 1px solid #ff9100;
+	margin-top: 50px; 
+}
+.cuadro-info-home{
+	border: 1px solid #ff9100;
+	margin-top: 20px;
+	padding: 10px;
+}
+.p-home-amarilla{
+	color: #ff9100;
+	padding: 3px;
+}
+.p-principal-home{
+	margin-top: 50px;
+}
+/* A QUIENES */
+.a-modal-quienes{
+	color: white;
+	margin-top: 40%;
+	background-color: #ff9100;
+}
+.image-aquienes{
+	width: 55%;
+	margin-top: 20px;
+}
+/* TERAPIAS */
+.image-terapia{
+	width: 40%;
+}
+/* ESTRATEGICA */
+#estrategica{
+	height: 500px;
+}
+/* HIPNOSIS */
+.image-hipnosis{
+	width: 70%;
+}
+/*ARANCELES */
+#aranceles{
+	background-color: #ecedec;
+}
+.image-aranceles{
+	width: 60%;
+	padding:5px;
+	border: 1px solid #ff9100;
+}
+.p-aranceles{
+	padding:5px;
+	border: 1px solid #ff9100;
+}
+.conten-info-aranceles{
+	text-align: left;
+}
+.h5-aranceles{
+	color: #ff9100;
+}
+/* INFORMACION*/
+#informacion{
+	background-color: #ff9100;
+	text-align: center;
+}
+.titulos{
+	color: white;
+	margin-top: 50px;
+}
+.primer-titulos{
+	margin-left: 150px;
+}
+.div-h1-ingrid{
+	height: 70px;
+	background-color: #DFE7E8;
+	opacity: 0.5;
+	margin-top: 50px;
+}
+.h1-ingrid{
+	color: #2F4143;
+	margin-left: 100px;
+}
+.p-ingrid{
+	padding-top: 20px;
+}
+.adquisicion-titulo{
+	font-weight: bold;
+}
+
+/*parte interna del slider*/
+.contenido{
+	text-align: center;
+	color: #4C2700;
+	margin-top: 30px;
+}
+.seccion-terapias{
+	text-align: center;
+	color:#4C2700;
+	margin-left: 80px;
+}
+/* FOOTER */
+footer{
+	background-color: #ff9100;
+	height: 80px;
+	text-align: center;
+	color: white;
+	padding-top: 50px;
+}
+
+/*RESPONSIVE ------ RESPONSIVE   */
+@media only screen and (max-width: 600px){
+
+}_

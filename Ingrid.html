@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="utf-8">
+	<title>Psicologa Clinica</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- Materialize-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- CSS-->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<!-- PRESENTACION 
+		<li><a href="sass.html">Sass</a></li>
+		<li><a href="badges.html">Components</a></li>
+		<li><a href="collapsible.html">JavaScript</a></li>
+	</ul>-->
+	<nav class="nav-extended">
+		<div class="container nav-wrapper">
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<div class="row">
+				<div class="menu col m12 l12 s12">
+					<div class="col s12 m12 l12 center-align">
+						<h4 class="h1-menu col m12 s12 l12">Ingrid Jaramillo</h4>
+						<p class="col s12 m12 l12 p-menu">Psicoterapeuta Estrategica Breve</p>
+					</div>
+					<ul id="nav-mobile" class="ul-menu offset-m1 col m11 l12 s12 center-align right hide-on-med-and-down">
+						<li class="li-menu"><a onclick="sectionNav('home')" href="#" class="a-menu">Home</a></li>
+
+						<li class="li-menu"><a onclick="sectionNav('quien')" href="#" class="a-menu">¿A Quienes?</a></li>
+
+						<li class="li-menu"><a onclick="sectionNav('terapia')" href="#" class="a-menu">Modalidad de Terapia</a></li>
+
+						<li class="li-menu"><a onclick="sectionNav('estrategica')" href="#" class="a-menu">Psicoterapia Estrategica Breve</a></li>
+
+						<li class="li-menu"><a onclick="sectionNav('hipnosis')" href="#" class="a-menu">Hipnosis Ericksoniana</a></li>
+
+						<li class="li-menu"><a onclick="sectionNav('aranceles')" href="#" class="a-menu">Aranceles</a></li>
+
+						<li class="li-menu"><a onclick="sectionNav('informacion')" href="#" class="a-menu">informacion</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- SERVICIOS -->
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="contenedor col s12 m12 l12">
+					<!-- BOTONES -->
+					<div class="botones show-on-large">
+						<button class="prev-button col s0 m0 show-on-large" id="prev-section" onclick="display('prev')"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+						<button class="next-button col offset-m11 offset-s11 show-on-large" id="next-section" onclick="display('next')"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+					</div>
+					<div id="slice">
+						<!-- HOME -->
+						<section class="slider" id="home" style="display: block">
+							<div class="col m12 l12">
+								<div class="col s12 m5 l5">
+									<img src="assets/img/logo.jpg" class="image-home">
+								</div>
+								<div class="col s12 m7 l7">
+									<p class="p-principal-home">Psicologa Clinica Acreditada, Miembro del colegio de Psicologos Clinicos de chile.</p>
+									<div class="col s12 m5 l5 cuadro-info-home">
+										<h6>Diplomada en salud familiar</h6>
+										<p class="p-home-amarilla">Universidad de chile
+										</p>
+									</div>
+									<div class="col s12 offset-m1 offset-l1 m5 l5 cuadro-info-home">
+										<h6>Magister en intervencion satemicas</h6>
+										<p class="p-home-amarilla">Universidad Mayor
+										</p>
+									</div>
+									<div class="col s12 m5 l5 cuadro-info-home">
+										<h6>Diplomado en intervencion terapeuticas y preventivas en agresion sexual.</h6>
+										<p class="p-home-amarilla">Universidad de chile</p>
+									</div>
+									<div class="col s12 offset-m1 offset-l1 m5 l5 cuadro-info-home">
+										<h6>Post-Titulo en Psicoterapia hipnoterapia Estrategica Breve Ericksoniana</h6>
+										<p class="p-home-amarilla">Instituto Milton H. Erickson.</p>
+									</div>
+									<div class="col s12 m5 l5 cuadro-info-home">
+										<h6>Psicodiagnostico infanto juvcenil con pruebas preventivas.</h6>
+										<p class="p-home-amarilla">Universidad de chile
+										</p>
+									</div>
+									<div class="col s12 offset-m1 offset-l1 m5 l5 cuadro-info-home">
+										<h6>Diplomado en Hipnosis e Hipnoterapia Ericksoniana.</h6>
+										<p class="p-home-amarilla">Instituto Milton H. Erickson.</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- a quienes? -->
+						<section class="slider" id="quien" style="display: none">
+							<div class="col m12 l12">
+								<div class="seccion-terapias">
+									<div class="col s12 m4 l4"><!-- Modal Trigger -->
+										<a class="waves-effect waves-light btn modal-trigger a-modal-quienes" href="#modal1">Infanto-Juvenil</a>
+										<img src="assets/img/infanto_juvenil.jpg" class="image-aquienes">
+
+										<!-- Modal Structure -->
+										<div id="modal1" class="modal">
+											<div class="modal-content">
+												<h4>Infanto-Juvenil</h4>
+												<h5>Alteraciones Emocionales:</h5>
+												<p>Ansiedad de Separacion, Fobia, Rivalidad, etc.
+												</p>
+												<h5>Alteraciones en la Conducta Alimentaria:</h5>
+												<p>Anorexia, Bulimia, Atracones, etc.
+												</p>
+												<h5>Alteracione de sueño:</h5>
+												<p>Insomnio, Sonambulismo, Pesadillas, etc.
+												</p>
+												<h5>Problemas de Aprendizaje Escolar:</h5>
+												<p>Atencion y concentracion, Hiperactividad, Habitos de estudio, etc.
+												</p>
+												<h5>Trastornos control de impulsos:</h5>
+												<p>Piromania, Cleptomania, Cortes del cuerpo, etc.
+												</p>
+												<h5>Otros:</h5>
+												<p>Enuresis, Encopresis, Tartamudeo, etc.
+												</p>
+											</div>
+											<div class="modal-footer">
+												<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Volver</a>
+											</div>
+										</div>
+										<div class="col m12 l12">
+
+										</div>
+									</div>
+									<div class="col s12 m4 l4">
+										<!-- Modal Trigger -->
+										<a class="waves-effect waves-light btn modal-trigger a-modal-quienes" href="#modal2">Adultos-Parejas</a>
+										<img src="assets/img/adultos_pareja.jpg" class="image-aquienes">
+										<!-- Modal Structure -->
+										<div id="modal2" class="modal">
+											<div class="modal-content">
+												<h4>Adultos-Parejas</h4>
+												<p>A bunch of text</p>
+											</div>
+											<div class="modal-footer">
+												<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Volver</a>
+											</div>
+										</div>
+									</div>
+									<div class="col s12 m4 l4">
+										<!-- Modal Trigger -->
+										<a class="waves-effect waves-light btn modal-trigger a-modal-quienes" href="#modal3">Familia-Adulto Mayor</a>
+										<img src="assets/img/familia_adultos.jpg" class="image-aquienes">
+										<!-- Modal Structure -->
+										<div id="modal3" class="modal">
+											<div class="modal-content">
+												<h4>Familia-Adulto Mayor</h4>
+												<p>A bunch of text</p>
+											</div>
+											<div class="modal-footer">
+												<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Volver</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- MODALIDAD DE TERAPIA -->
+						<section class="slider" id="terapia" style="display: none">
+							<div class="contenido col s12 m12 l12">
+								<div class="col s12 m12 l12">
+									<h3>Modalidad de Terapia</h3>
+								</div>
+								<div class="col s12 m4 l4">
+									<h5 class="col m12 l12">Terapia Individual</h5>
+									<img src="assets/img/terapia_individual.jpg" class="image-terapia">
+								</div>
+								<div class="col s12 m4 l4">
+									<h5 class="col m12 l12">Terapia de Pareja</h5>
+									<img src="assets/img/terapia_pareja.jpg" class="image-terapia">
+								</div>
+								<div class="col s12 m4 l4">
+									<h5 class="col m12 l12">Terapia Familiar</h5>
+									<img src="assets/img/terapia_familiar.jpg" class="image-terapia">
+								</div>
+							</div>
+						</section>
+						<!--ESTRATEGICA BREVE -->
+						<section class="slider" id="estrategica" style="display: none">
+							<div class="contenido col s12 m12 l12">
+								<div class="col s12 m12 l12">
+									<h3>¿Que es la Psicoterapia Estrategica Breve?</h3>
+								</div>
+								<div class="col s12 offset-m2 m8">
+									<p>La Terapia es un proceso co-construido entre el consultante y el terapeuta, a partir del cual se genera intervenciones a la medida del consultante, lo cual implica la co-construccion de las metas terapeuticas, desde la perspectiva interaccional y positiva, siendo esta concreta, conductual y medibles. </p>
+									<p>Se visualiza al consultante como una persona que cuenta con la fuerza y los recursos necesarios para cambiar.</p>
+									<p>Trabaja desde la triada Emocion, Pensamiento y Conducta.</p>
+									<p>Se enfoca en el presente-futuro y se orienta a las soluciones.</p>
+									<p>Entre sus herramientas se encuentran el lenguaje inductivo, directivas (tareas) entre sesiones. Preguntas conversacionales, entre otras.</p>
+								</div>
+							</div>
+						</section>
+						<!-- HIPNOSIS ERICKSONIANA -->
+						<section class="slider" id="hipnosis" style="display: none">
+							<div class="contenido col m12 l12 s12">
+								<div class="col s12 m6 l6 offset-m1 offset-l1">
+									<h3>Hipnosis Ericksoniana</h3>
+									<p>La Hipnosis es una tecnica que posibilita aumentar la cooperacion y recursos experienciales del consultante.
+									</p>
+									<p>La hipnosis puede ser con trance formal o sin trance
+									</p>
+									<p>El tipó de lenguaje, directo o indirecto ,dependera del estilo de respuesta del consultante.
+									</p>
+									<p>Su uso destaca en situaciones tales como: Bajar de peso, Dejar de fumar, Ansiedad, Desconcentracion, Depresion, Alcoholismo, Drogadiccion, Fobias, Insomnio, Estres, entre otras.
+									</p>
+								</div>
+								<div class="col s12 m4 l4">
+									<img src="assets/img/erickson.jpg" class="image-hipnosis">
+								</div>
+							</section>
+							<section class="slider" id="aranceles" style="display: none">
+								<div class="contenido col s12 m12 l12">
+									<div class="col s12 m5 l5">
+										<img src="assets/img/ap.jpg" class="image-aranceles">
+									</div>
+									<div class="col s12 m6 l6">
+										<div class="col s12 m12 l12 conten-info-aranceles">
+											<h5 class="h5-aranceles">Isapre</h5>
+											<p class="p-aranceles">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut.
+											</p>
+										</div>
+										<div class="col s12 m12 l12 conten-info-aranceles">
+											<h5 class="h5-aranceles">nose</h5>
+											<p class="p-aranceles">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut.
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- INFORMACION -->
+							<section class="slider" id="informacion" style="display: none">
+								<div class="contenido col s12 m12 l12">
+									<div class="col s12 m6 l6">
+										<h3>Direccion</h3>
+										<div class="col m12 l12">
+											<h5>Principe de Gales #5921,Of. 704</h5>
+											<p>Metro Pri
+												ncipe de Gales- La Reina- Santiago
+											</p>
+										</div>
+										<div class="col m12 l12">
+											<h5>Horario de Atencion</h5>
+											<p>De Lunes a Viernes</p>
+											<p>Cel: 9 95161007
+											</p>
+										</div>
+										<div class="col m12 l12">
+											<h5>Visita domiciliaria Particular</h5>
+											<p>Cel:995161007
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col m12 l12 s12 center-align">
+						<p>"El cambio no solo es posible,sino tambien inevitable"-(Jay Haley)</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- JQUERY-->
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+		<!-- Materialize -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+		<!-- JS -->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+	</html>
