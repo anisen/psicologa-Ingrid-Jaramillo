@@ -187,7 +187,11 @@ nav{
 .adquisicion-titulo{
 	font-weight: bold;
 }
-
+.image-info-mapa{
+	width: 58%;
+	border: 1px solid #fff;
+	padding: 5px;
+}
 /*parte interna del slider*/
 .contenido{
 	text-align: center;
